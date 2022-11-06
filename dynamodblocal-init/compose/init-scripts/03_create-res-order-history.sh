@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "########### Creating table res-order-history ###########"
+echo "########### Creating table res_order_history ###########"
 aws   $AWS_ENDPOINT \
       dynamodb create-table \
          --cli-input-json '
          {
-           "TableName": "res-order-history",
+           "TableName": "res_order_history",
            "KeySchema": [
              {
                "KeyType": "HASH",
@@ -54,8 +54,8 @@ aws   $AWS_ENDPOINT \
            }
          }
          '
-      # --cli-input-json=file://res-order-history.json
+      # --cli-input-json=file://res_order_history.json
 
 echo "########### Describing a table ###########"
 aws   $AWS_ENDPOINT \
-      dynamodb describe-table --table-name res-order-history --output table
+      dynamodb describe-table --table-name res_order_history --output table

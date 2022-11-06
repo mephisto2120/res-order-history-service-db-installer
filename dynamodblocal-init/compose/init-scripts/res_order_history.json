@@ -1,5 +1,5 @@
 {
-  "TableName": "res-order-history",
+  "TableName": "res_order_history",
   "KeySchema": [
     {
       "KeyType": "HASH",
